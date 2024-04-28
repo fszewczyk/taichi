@@ -55,7 +55,7 @@ def execute_command(line):
 
 def get_os_name():
   name = platform.platform()
-  if name.lower().startswith('darwin'):
+  if name.lower().startswith('darwin') or name.lower().startswith('macos'):
     return 'osx'
   elif name.lower().startswith('windows'):
     return 'win'
